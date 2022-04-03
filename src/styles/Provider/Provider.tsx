@@ -1,8 +1,8 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import { lightTheme } from './light';
-import { darkTheme } from './dark';
-import GlobalStyle from './global-styles';
+import { lightTheme } from '../themes/light';
+import { darkTheme } from '../themes/dark';
+import GlobalStyle from '../global-styles';
 import '../index.css';
 
 interface IProps {

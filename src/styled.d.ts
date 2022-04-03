@@ -1,6 +1,6 @@
 // import original module declarations
 import 'styled-components';
-import { IPalette } from './themes/types';
+import { IPalette } from './styles/types';
 
 // and extend them!
 declare module 'styled-components' {
