@@ -16,5 +16,11 @@
         "strict": true,
         "target": "es6"
     },
-    "include": ["src/**/*.ts", "src/**/*.tsx","declaration.d.ts"]
+    "include": ["src/**/*"],
+  "exclude": [
+    "node_modules",
+    "build",
+    "src/**/*.stories.tsx",
+    "src/**/*.test.tsx"
+  ]
 }
