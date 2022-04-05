@@ -3,7 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import { lightTheme } from '../themes/light';
 import { darkTheme } from '../themes/dark';
 import GlobalStyle from '../global-styles';
-import '../index.css';
+import '../../index.css';
 
 interface IProps {
 	/**
