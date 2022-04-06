@@ -8,7 +8,7 @@ import { InputDialogProps, Label } from '../Input';
 
 export const StyledTextArea = styled.textarea`
 	height: 6.75em;
-	padding: .75em
+	padding: 0.75em;
 	margin: ${(props) => props.theme.input.margin};
 	box-sizing: border-box;
 	width: ${(props) => props.theme.input.width};
