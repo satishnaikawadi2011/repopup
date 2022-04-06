@@ -100,5 +100,25 @@ export const lightTheme: DefaultTheme = {
 							contrastText: '#ffffff'
 						}
 				}
+		},
+	input:
+		{
+			borderRadius: '0.1875em',
+			boxShadow: 'inset 0 1px 1px rgba(#000, .06), 0 0 0 3px transparent',
+			border: '1px solid #4d4d4d',
+			height: '2.625em',
+			fontSize: '1.125em',
+			margin: '1em 2em 3px',
+			padding: '0 .75em',
+			width: 'auto',
+			transition: 'border-color .1s, box-shadow .1s',
+			focus:
+				{
+					border: '1px solid #b4dbed',
+					boxShadow: 'inset 0 1px 1px rgba(#000, .06), 0 0 0 3px rgba(100, 150, 200, .5);',
+					outline: 'none'
+				},
+			background: 'inherit',
+			color: 'inherit'
 		}
 };

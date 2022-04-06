@@ -24,6 +24,34 @@ export interface IPalette {
 	dark: IColor;
 }
 
+/**
+ * all these styles will be applied when input is focused
+ */
+export interface IInputFocus {
+	border: string | number;
+	outline: string;
+	boxShadow: string;
+}
+
+/**
+ * style types for input
+ */
+export interface IInput {
+	margin: number | string;
+	padding: number | string;
+	width: number | string;
+	height: number | string;
+	borderRadius: number | string;
+	fontSize: number | string;
+	transition: string;
+	border: number | string;
+	boxShadow: string;
+	focus: IInputFocus;
+
+	background: string;
+	color: string;
+}
+
 export interface DefaultTheme {
 	palette: {
 		common: {
@@ -48,4 +76,5 @@ export interface DefaultTheme {
 		error: IPalette;
 		cancel: IPalette;
 	};
+	input: IInput;
 }
