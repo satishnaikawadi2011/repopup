@@ -12,7 +12,7 @@ interface IProps {
 	theme?: 'light' | 'dark';
 }
 
-const RemodalProvider: React.FC<IProps> = ({ children, theme = 'light' }) => {
+const RepopupProvider: React.FC<IProps> = ({ children, theme = 'light' }) => {
 	const selectedTheme =
 
 			theme == 'light' ? lightTheme :
@@ -25,4 +25,4 @@ const RemodalProvider: React.FC<IProps> = ({ children, theme = 'light' }) => {
 	);
 };
 
-export default RemodalProvider;
+export default RepopupProvider;
