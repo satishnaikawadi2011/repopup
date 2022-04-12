@@ -223,7 +223,7 @@ export default App;
 
 ## Support
 
-<a href="https://www.buymeacoffee.com/satishnaikawadi2001" target="_blank">
+<a href="https://www.buymeacoffee.com/satishnaikawadi" target="_blank">
   <img src="https://res.cloudinary.com/dyfm31f1n/image/upload/v1649760399/repopup/bmc-button_bridqp.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" >
 </a>
 
