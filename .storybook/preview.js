@@ -13,7 +13,7 @@ export const parameters = {
 
 export const decorators = [
 	(Story) => (
-		<RepopupProvider theme="light">
+		<RepopupProvider theme="dark">
 			<Story />
 		</RepopupProvider>
 	)
