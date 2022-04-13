@@ -1,6 +1,6 @@
 {
 	"name": "repopup",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "Easy to use as well as reusable and customizable react modals",
 	"main": "build/index.js",
 	"module": "build/index.es.js",
