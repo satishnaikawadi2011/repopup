@@ -9,6 +9,10 @@ interface IProps {
      * Use this to decide the theme of the components
      */
 	theme?: 'light' | 'dark';
+	/**
+	 * Use this to pass children to Provider component
+	 */
+	children: React.ReactNode;
 }
 
 const RepopupProvider: React.FC<IProps> = ({ children, theme = 'light' }) => {
