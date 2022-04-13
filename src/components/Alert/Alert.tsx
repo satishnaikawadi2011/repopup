@@ -6,6 +6,14 @@ import { PlacementType } from '../Modal/Popup/Popup';
 
 interface AlertProps {
 	/**
+	 * Use this to change the text on the "Confirm"-button.
+	 */
+	confirmButtonText?: string;
+	/**
+	 * Use this to change the text on the "Deny"-button.
+	 */
+	denyButtonText?: string;
+	/**
 	 * Boolean describing if the Alert should be shown or not.
 	 */
 	open: boolean;
@@ -13,6 +21,14 @@ interface AlertProps {
 	 * Function that will be run when the Alert is requested to be closed
 	 */
 	onClose: () => void;
+	/**
+	 * Use this as a click handler for the "Confirm"-button.
+	 */
+	onConfirm?: React.MouseEventHandler<HTMLButtonElement> | undefined;
+	/**
+	 * Use this as a click handler for the "Deny"-button.
+	 */
+	onDeny?: React.MouseEventHandler<HTMLButtonElement> | undefined;
 	/**
 	 * Wheather or not to close the Alert on clicking the backdrop 
 	 */
@@ -44,7 +60,11 @@ const Alert: React.FC<AlertProps> = ({
 	placement,
 	subtitle,
 	title,
-	variant
+	variant,
+	confirmButtonText = 'Ok',
+	denyButtonText = 'Cancel',
+	onConfirm,
+	onDeny
 }) => {
 	return (
 		<Modal
@@ -55,8 +75,12 @@ const Alert: React.FC<AlertProps> = ({
 			subtitle={subtitle}
 			icon={variant}
 			placement={placement}
-			onConfirm={onClose}
+			onConfirm={onConfirm}
+			onDeny={onDeny || onClose}
 			showConfirmButton
+			confirmButtonText={confirmButtonText}
+			denyButtonText={denyButtonText}
+			showDenyButton
 		/>
 	);
 };

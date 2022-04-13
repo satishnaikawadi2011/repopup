@@ -27,6 +27,8 @@ export const Success: ComponentStory<typeof React.Fragment> = () => {
 				title={'Success'}
 				subtitle={`Task completed successfully.`}
 				variant="success"
+				onConfirm={() => console.log('Confirmed')}
+				onDeny={() => console.log('Denied')}
 			/>
 		</React.Fragment>
 	);

@@ -29,7 +29,6 @@ export const Input = styled.input`
 		outline: ${(props) => props.theme.input.focus.outline};
 		box-shadow: ${(props) => props.theme.input.focus.boxShadow};
 	}
-
 	&::placeholder {
 		color: #ccc;
 	}
