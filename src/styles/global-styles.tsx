@@ -20,18 +20,18 @@ const GlobalStyle = createGlobalStyle`
 	src: local("QuicksandSemiBold"), url(${QuicksandSemiBold}) format("truetype");
 	font-weight: bold;
 }
-*,
-body {
-	font-family: QuicksandRegular;
+.modal__container *{
+font-family: QuicksandRegular;
 }
 
-h1 {
-	font-family: QuicksandBold;
+.modal__container h1{
+font-family: QuicksandBold;
 }
 
-button{
+.modal__container button{
 	font-family:QuicksandSemiBold;
 }
+
 `;
 
 export default GlobalStyle;

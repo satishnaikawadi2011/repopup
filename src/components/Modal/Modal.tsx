@@ -186,7 +186,7 @@ const Modal: React.FC<ModalProps> = ({
 
 	return (
 		<ModalContainer
-			className={customClass?.container}
+			className={`modal__container ${customClass?.container}`}
 			onClick={
 
 					closeOnBackdropClick ? onRequestClose :
