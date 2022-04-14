@@ -5,6 +5,7 @@ import { ConfirmButton } from '../components/Button/Button';
 import useInput from './useInput';
 import useAlert from './useAlert';
 import useTextArea from './useTextArea';
+import useSelect from './useSelect';
 
 export default {
 	/* 👇 The title prop is optional.
@@ -57,6 +58,21 @@ export const TextAreaHook: ComponentStory<typeof React.Fragment> = () => {
 		<React.Fragment>
 			<ConfirmButton onClick={() => openTextAreaDialog()}>Open</ConfirmButton>
 			<TextAreaDialogComponent placeholder="Write your message ...." />
+		</React.Fragment>
+	);
+};
+
+export const SelectHook: ComponentStory<typeof React.Fragment> = () => {
+	const { SelectComponent, openSelectDialog } = useSelect({
+		closeOnBackdropClick: true,
+		label: 'Message',
+		onSubmitCallback: (val: any) => console.log(val),
+		inputOptions: { Soprts: { Cricket: 'cricket', Football: 'football' }, Food: 'food' }
+	});
+	return (
+		<React.Fragment>
+			<ConfirmButton onClick={() => openSelectDialog()}>Open</ConfirmButton>
+			<SelectComponent />
 		</React.Fragment>
 	);
 };
