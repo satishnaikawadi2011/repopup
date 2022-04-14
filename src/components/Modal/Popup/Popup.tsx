@@ -2,15 +2,15 @@ import styled from 'styled-components';
 import { show, hide } from '../../../animations/keyframes';
 
 export type PlacementType =
-	| 'top'
-	| 'center'
 	| 'bottom'
-	| 'center-start'
-	| 'bottom-start'
-	| 'top-start'
-	| 'top-end'
 	| 'bottom-end'
-	| 'center-end';
+	| 'bottom-start'
+	| 'center'
+	| 'center-end'
+	| 'center-start'
+	| 'top'
+	| 'top-end'
+	| 'top-start';
 
 export interface PopupProps {
 	open?: boolean;
