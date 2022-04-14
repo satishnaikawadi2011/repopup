@@ -4,6 +4,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { ConfirmButton } from '../components/Button/Button';
 import useInput from './useInput';
 import useAlert from './useAlert';
+import useTextArea from './useTextArea';
 
 export default {
 	/* 👇 The title prop is optional.
@@ -42,6 +43,20 @@ export const InputHook: ComponentStory<typeof React.Fragment> = () => {
 		<React.Fragment>
 			<ConfirmButton onClick={() => openInputDialog()}>Open</ConfirmButton>
 			<InputDialogComponent placeholder="Write your name ...." />
+		</React.Fragment>
+	);
+};
+
+export const TextAreaHook: ComponentStory<typeof React.Fragment> = () => {
+	const { TextAreaDialogComponent, openTextAreaDialog } = useTextArea({
+		closeOnBackdropClick: true,
+		label: 'Message',
+		onSubmitCallback: (val: any) => console.log(val)
+	});
+	return (
+		<React.Fragment>
+			<ConfirmButton onClick={() => openTextAreaDialog()}>Open</ConfirmButton>
+			<TextAreaDialogComponent placeholder="Write your message ...." />
 		</React.Fragment>
 	);
 };
