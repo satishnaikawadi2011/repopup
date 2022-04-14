@@ -39,7 +39,7 @@ const useInput = (args: UseInputArgs) => {
 		setOpen(true);
 	};
 
-	const InputDialogComponent = () => (
+	const InputDialogComponent: React.FC<React.HTMLProps<HTMLInputElement>> = ({ ...props }) => (
 		<Input
 			open={open}
 			onClose={() => setOpen(false)}
@@ -49,6 +49,7 @@ const useInput = (args: UseInputArgs) => {
 			cancelButtonText={cancelButtonText}
 			label={label}
 			submitButtonText={submitButtonText}
+			{...props as any}
 		/>
 	);
 
