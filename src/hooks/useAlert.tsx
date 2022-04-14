@@ -15,7 +15,7 @@ export interface UseAlertArgs {
 	/**
 	 * Use this as a click handler for the "Confirm"-button.
 	 */
-	onConfirm?: React.MouseEventHandler<HTMLButtonElement> | undefined;
+	onConfirm?: React.MouseEventHandler<HTMLButtonElement> | undefined | 'close';
 	/**
 	 * Use this as a click handler for the "Deny"-button.
 	 */
@@ -28,6 +28,14 @@ export interface UseAlertArgs {
 	 * Used for the title of the alert
 	 */
 	title: string;
+	/**
+	 * If set to true, a "Confirm"-button will  be shown.
+	 */
+	showConfirmButton?: boolean;
+	/**
+	 * If set to true, a "Deny"-button will  be shown.
+	 */
+	showDenyButton?: boolean;
 	/**
 	 * Used for a description for the Alert.
 	 */
@@ -52,7 +60,9 @@ const useAlert = (args: UseAlertArgs) => {
 		confirmButtonText = 'Ok',
 		denyButtonText = 'Cancel',
 		onConfirm,
-		onDeny
+		onDeny,
+		showConfirmButton,
+		showDenyButton
 	} = args;
 	const [
 		open,
@@ -77,9 +87,15 @@ const useAlert = (args: UseAlertArgs) => {
 			closeOnBackdropClick={closeOnBackdropClick}
 			confirmButtonText={confirmButtonText}
 			denyButtonText={denyButtonText}
-			onConfirm={onConfirm}
+			onConfirm={
+
+					onConfirm == 'close' ? () => setOpen(false) :
+					onConfirm
+			}
 			onDeny={onDeny}
 			placement={placement}
+			showConfirmButton={showConfirmButton}
+			showDenyButton={showDenyButton}
 		/>
 	);
 

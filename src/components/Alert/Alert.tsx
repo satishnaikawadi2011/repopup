@@ -38,6 +38,14 @@ interface AlertProps {
 	 */
 	title: string;
 	/**
+	 * If set to true, a "Confirm"-button will  be shown.
+	 */
+	showConfirmButton?: boolean;
+	/**
+	 * If set to true, a "Deny"-button will  be shown.
+	 */
+	showDenyButton?: boolean;
+	/**
 	 * Used for a description for the Alert.
 	 */
 	subtitle?: string;
@@ -64,7 +72,9 @@ const Alert: React.FC<AlertProps> = ({
 	confirmButtonText = 'Ok',
 	denyButtonText = 'Cancel',
 	onConfirm,
-	onDeny
+	onDeny,
+	showConfirmButton = true,
+	showDenyButton = true
 }) => {
 	return (
 		<Modal
@@ -77,10 +87,10 @@ const Alert: React.FC<AlertProps> = ({
 			placement={placement}
 			onConfirm={onConfirm}
 			onDeny={onDeny || onClose}
-			showConfirmButton
+			showConfirmButton={showConfirmButton}
 			confirmButtonText={confirmButtonText}
 			denyButtonText={denyButtonText}
-			showDenyButton
+			showDenyButton={showDenyButton}
 		/>
 	);
 };
