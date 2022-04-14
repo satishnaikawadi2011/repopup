@@ -16,15 +16,15 @@ const StyledSelect = styled.select`
 	font-size: ${(props) => props.theme.input.fontSize};
 `;
 
-interface OptGroup {
+export interface OptGroup {
 	[key: string | number]: string;
 }
 
-interface InputOptionsType {
+export interface InputOptionsType {
 	[key: string | number]: OptGroup | string;
 }
 
-interface SelectProps {
+export interface SelectProps {
 	inputOptions: InputOptionsType;
 }
 

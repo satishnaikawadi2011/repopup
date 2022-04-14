@@ -73,10 +73,6 @@ const useAlert = (args: UseAlertArgs) => {
 		setOpen(true);
 	};
 
-	const closeAlert = () => {
-		setOpen(false);
-	};
-
 	const AlertComponent = () => (
 		<Alert
 			open={open}
@@ -99,7 +95,7 @@ const useAlert = (args: UseAlertArgs) => {
 		/>
 	);
 
-	return { openAlert, AlertComponent, closeAlert };
+	return { openAlert, AlertComponent };
 };
 
 export default useAlert;
