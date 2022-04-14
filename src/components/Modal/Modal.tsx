@@ -186,6 +186,7 @@ const Modal: React.FC<ModalProps> = ({
 
 	return (
 		<ModalContainer
+			data-testid='modal-container'
 			className={`modal__container ${customClass?.container}`}
 			onClick={
 
@@ -196,6 +197,7 @@ const Modal: React.FC<ModalProps> = ({
 			placement={placement}
 		>
 			<Popup
+				data-testid='popup-window'
 				className={customClass?.popup}
 				open={open}
 				placement={placement}

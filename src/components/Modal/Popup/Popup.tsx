@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { show, hide } from '../../../animations/keyframes';
+import { ITestComponent } from '../../../types';
 
 export type PlacementType =
 	| 'bottom'
@@ -19,7 +20,7 @@ export interface PopupProps {
 
 export const Popup =
 	styled.div <
-	PopupProps >
+	(PopupProps & ITestComponent) >
 	`
  	display: ${(props) =>
 

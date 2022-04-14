@@ -1,9 +1,10 @@
 import styled from 'styled-components';
+import { ITestComponent } from '../../../types';
 import { PopupProps } from '../Popup/Popup';
 
 export const ModalContainer =
 	styled.div <
-	PopupProps >
+	(PopupProps & ITestComponent) >
 	`
 	display: grid;
 	Z-index: ${(props) =>

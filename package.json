@@ -60,6 +60,7 @@
 		"babel-loader": "^8.2.4",
 		"identity-obj-proxy": "^3.0.0",
 		"jest": "^27.5.1",
+		"jest-canvas-mock": "^2.3.1",
 		"node-sass": "^7.0.1",
 		"postcss": "^8.4.12",
 		"react": "^18.0.0",
@@ -81,6 +82,9 @@
 	},
 	"dependencies": {},
 	"jest": {
-		"testEnvironment": "jsdom"
+		"testEnvironment": "jsdom",
+		"setupFiles": [
+			"jest-canvas-mock"
+		]
 	}
 }
