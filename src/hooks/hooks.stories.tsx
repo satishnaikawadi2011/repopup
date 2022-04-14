@@ -6,6 +6,7 @@ import useInput from './useInput';
 import useAlert from './useAlert';
 import useTextArea from './useTextArea';
 import useSelect from './useSelect';
+import useModal from './useModal';
 
 export default {
 	/* 👇 The title prop is optional.
@@ -73,6 +74,23 @@ export const SelectHook: ComponentStory<typeof React.Fragment> = () => {
 		<React.Fragment>
 			<ConfirmButton onClick={() => openSelectDialog()}>Open</ConfirmButton>
 			<SelectComponent />
+		</React.Fragment>
+	);
+};
+
+export const ModalHook: ComponentStory<typeof React.Fragment> = () => {
+	const { openModal, ModalComponent } = useModal({
+		closeOnBackdropClick: true,
+		showSuccessButton: true,
+		successButtonText: 'Ok',
+		onSuccess: 'close',
+		icon: 'success',
+		title: 'This is Success !!!'
+	});
+	return (
+		<React.Fragment>
+			<ConfirmButton onClick={() => openModal()}>Open</ConfirmButton>
+			<ModalComponent />
 		</React.Fragment>
 	);
 };
