@@ -1,5 +1,5 @@
 import { DefaultTheme } from 'styled-components';
-export const lightTheme: DefaultTheme = {
+export const lightTheme = {
 	palette:
 		{
 			common:
