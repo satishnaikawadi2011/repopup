@@ -11,7 +11,9 @@
 		"build": "rollup -c",
 		"prepublishOnly": "rollup -c",
 		"storybook": "start-storybook -p 6006",
-		"build-storybook": "build-storybook"
+		"build-storybook": "build-storybook",
+		"test": "jest",
+		"test:watch": "jest --watch"
 	},
 	"keywords": [
 		"react",
@@ -77,5 +79,8 @@
 		"react-dom": ">=16.8.0",
 		"styled-components": "^5.3.5"
 	},
-	"dependencies": {}
+	"dependencies": {},
+	"jest": {
+		"testEnvironment": "jsdom"
+	}
 }
