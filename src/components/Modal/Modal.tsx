@@ -10,7 +10,7 @@ import { VariantType } from '../Icon/types';
 import { Icon } from '../Icon/Icon';
 import { getIcon } from '../Icon/getIcon';
 
-interface IModalCustomClassType{
+export interface IModalCustomClassType{
 	/**
 	 * class for a container of buttons
 	 */
