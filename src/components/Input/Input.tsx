@@ -70,14 +70,14 @@ export interface InputDialogProps {
 }
 
 const InputDialog: React.FC<InputDialogProps & React.HTMLProps<HTMLInputElement>> = ({
+	cancelButtonText = 'Cancel',
+	closeOnBackdropClick = true,
 	label,
 	onClose,
-	title,
-	open,
-	closeOnBackdropClick = true,
 	onSubmitCallback,
+	open,
 	submitButtonText = 'Submit',
-	cancelButtonText = 'Cancel',
+	title,
 	...props
 }) => {
 	const [

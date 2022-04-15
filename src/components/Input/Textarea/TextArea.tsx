@@ -31,13 +31,13 @@ export const StyledTextArea = styled.textarea`
 `;
 
 const TextArea: React.FC<InputDialogProps & React.HTMLProps<HTMLTextAreaElement>> = ({
-	submitButtonText = 'Submit',
 	cancelButtonText = 'Cancel',
 	closeOnBackdropClick = true,
 	label,
 	onClose,
 	onSubmitCallback,
 	open,
+	submitButtonText = 'Submit',
 	title,
 	...props
 }) => {

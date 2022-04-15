@@ -63,18 +63,18 @@ export const Icon = styled.div`margin-top: 30px;`;
 
 const Alert: React.FC<AlertProps> = ({
 	closeOnBackdropClick = true,
-	onClose,
-	open,
-	placement,
-	subtitle,
-	title,
-	variant,
 	confirmButtonText = 'Ok',
 	denyButtonText = 'Cancel',
+	onClose,
 	onConfirm,
 	onDeny,
+	open,
+	placement,
 	showConfirmButton = true,
-	showDenyButton = true
+	showDenyButton = true,
+	subtitle,
+	title,
+	variant
 }) => {
 	return (
 		<Modal
