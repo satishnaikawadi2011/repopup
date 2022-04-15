@@ -1,14 +1,14 @@
 <p align="center">
   <a href="https://satishnaikawadi2011.github.io/repopup" target="_blank">
     <img 
-      src="https://res.cloudinary.com/dyfm31f1n/image/upload/v1649741553/repopup/icon-logo_swesmb.svg"
+      src="https://res.cloudinary.com/dyfm31f1n/image/upload/v1650036003/repopup/icon-logo_mrbgeu.svg"
       alt="REPopup"
       title="REPopup"
-      width="200"
+      width="150"
     />
     <br/>
 <img 
-      src="https://res.cloudinary.com/dyfm31f1n/image/upload/v1649741377/repopup/onlinelogomaker-041122-2355-0573_mjnxyn.png" align="center" width="700">
+      src="https://res.cloudinary.com/dyfm31f1n/image/upload/v1650036077/repopup/text-logo_kndalr.png" align="center" width="400">
   </a>
 </p>
 
@@ -127,16 +127,16 @@ import { Modal } from 'repopup';
 function App() {
   const [open,setOpen] = useState(false);
 
-  return (
-   <div>
-			<button onClick={() => setOpen(true)}>Open</button>
-			<Modal 
+return (
+  <div>
+	<button onClick={() => setOpen(true)}>Open</button>
+	<Modal 
       onRequestClose={() => setOpen(false)} 
       open={open} 
       title={`Hello From REPopup 🎉🎉🎉 `} 
-      />
-		</div>
-  );
+     />
+</div>
+);
 }
 
 export default App;
@@ -161,7 +161,7 @@ function App() {
 
   return (
    <div>
-			<button onClick={() => setOpen(true)}>Open</button>
+	 <button onClick={() => setOpen(true)}>Open</button>
 	      <Modal
 				onRequestClose={() => setOpen(false)}
 				open={open}
