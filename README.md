@@ -51,7 +51,7 @@ The aim of **REPopup** is to provide an all-in-one UI components related to moda
 - [Demo](https://repopup-docs.vercel.app/docs/usage#quick-start)
 - [Documentation](https://repopup-docs.vercel.app/docs/overview)
 - [Playground](https://repopup-docs.vercel.app/docs/playground/modal)
-- [CodeSandbox](https://repopup-docs.vercel.app/docs/playground/modal)
+- [CodeSandbox](https://codesandbox.io/s/usage-forked-64di3c?file=/index.js)
 
 ## Installation
 
