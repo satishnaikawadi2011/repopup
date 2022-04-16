@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://satishnaikawadi2011.github.io/repopup" target="_blank">
+  <a href="https://repopup-docs.vercel.app/" target="_blank">
     <img 
       src="https://res.cloudinary.com/dyfm31f1n/image/upload/v1650036003/repopup/icon-logo_mrbgeu.svg"
       alt="REPopup"
@@ -28,7 +28,7 @@
 <br/>
 
 <p align="center">
-  <a href="https://satishnaikawadi2011.github.io/repopup" target="_blank">
+  <a href="https://repopup-docs.vercel.app/" target="_blank">
     <img src="https://res.cloudinary.com/dyfm31f1n/image/upload/v1649741179/repopup/repopup-demo_t2ljam.png" alt="REPopup Preview" title="REPopup Preview">
   </a>
 </p>
@@ -48,10 +48,10 @@ The aim of **REPopup** is to provide an all-in-one UI components related to moda
 
 ## Resources
 
-- [Demo](https://satishnaikawadi2011.github.io/repopup)
-- [Documentation](https://satishnaikawadi2011.github.io/repopup/docs)
-- [Playground](https://satishnaikawadi2011.github.io/repopup/docs/playground)
-- [CodeSandbox](https://satishnaikawadi2011.github.io/repopupdocs/playground)
+- [Demo](https://repopup-docs.vercel.app/docs/usage#quick-start)
+- [Documentation](https://repopup-docs.vercel.app/docs/overview)
+- [Playground](https://repopup-docs.vercel.app/docs/playground/modal)
+- [CodeSandbox](https://repopup-docs.vercel.app/docs/playground/modal)
 
 ## Installation
 
@@ -89,7 +89,7 @@ installation guide
 
 ## Getting Started
 
-For complete usage, visit the <a href="https://satishnaikawadi2011.github.io/repopup/docs">docs</a>.
+For complete usage, visit the <a href="https://repopup-docs.vercel.app/docs/overview">docs</a>.
 
 > The below example demonstrates very basic and full usages of Modal component respectively.
 
@@ -144,7 +144,7 @@ export default App;
 
 ##### Result
 <p align="center">
-  <a href="https://satishnaikawadi2011.github.io/repopup" target="_blank">
+  <a href="https://repopup-docs.vercel.app/" target="_blank">
     <img src="https://res.cloudinary.com/dyfm31f1n/image/upload/v1649758556/repopup/basic-usage_r6qslw.png" alt="REPopup Preview" title="REPopup Preview">
   </a>
 </p>
@@ -185,7 +185,7 @@ export default App;
 
 ##### Result
 <p align="center">
-  <a href="https://satishnaikawadi2011.github.io/repopup" target="_blank">
+  <a href="https://repopup-docs.vercel.app/" target="_blank">
     <img src="https://res.cloudinary.com/dyfm31f1n/image/upload/v1649759405/repopup/full-usage_m817tt.png" alt="REPopup Preview" title="REPopup Preview">
   </a>
 </p>
