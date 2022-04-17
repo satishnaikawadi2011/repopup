@@ -1,6 +1,6 @@
 {
 	"name": "repopup",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"description": "Easy to use as well as reusable and customizable react modals",
 	"main": "build/index.js",
 	"module": "build/index.es.js",
@@ -34,12 +34,12 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/satishnaikawadi2011/repopup"
+		"url": "https://github.com/satishnaikawadi2011/repopup.git"
 	},
 	"bugs": {
 		"url": "https://github.com/satishnaikawadi2011/repopup/issues"
 	},
-	"homepage": "https://github.com/satishnaikawadi2011/repopup",
+	"homepage": "https://repopup-docs.vercel.app/",
 	"devDependencies": {
 		"@babel/core": "^7.17.8",
 		"@rollup/plugin-commonjs": "^21.0.3",
