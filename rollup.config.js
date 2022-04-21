@@ -5,6 +5,7 @@ import typescript from 'rollup-plugin-typescript2';
 import postcss from 'rollup-plugin-postcss';
 import json from '@rollup/plugin-json';
 import url from 'rollup-plugin-url';
+import { uglify } from 'rollup-plugin-uglify';
 
 const packageJson = require('./package.json');
 
@@ -39,6 +40,7 @@ export default {
 			// setting infinite limit will ensure that the files
 			// are always bundled with the code, not copied to /dist
 			limit   : Infinity
-		})
+		}),
+		uglify()
 	]
 };
